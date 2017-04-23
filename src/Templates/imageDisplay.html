@@ -1,0 +1,15 @@
+<div id="imageDisplay">
+    <img src= {{ctrl.display.Image}} class= "thumbnail" width="404" height="236">
+    <p> {{ctrl.display.des}}
+         <span> Rating: {{ctrl.display.rating}} out of 5</span>
+         <span> 
+             <label> Rating </label>
+             <select  ng-model="rating">
+                 <option ng-repeat="opt in ctrl.selections" >{{opt}}</option>
+
+            </select>
+            <button type="button" class="btn btn-primary btnrat" ng-click="ctrl.selectRating(rating)"> Sumbit</button>
+            </span>
+     </p>
+</div>
+

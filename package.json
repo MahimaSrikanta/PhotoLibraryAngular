@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "description": "Create a fish pond in AngularJS",
+  "author": "Hack Reactor <curriculum.team@hackreactor.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "live-server"
+  },
+  "dependencies": {
+    "angular": "^1.6.4",
+    "bootstrap": "^3.3.7",
+    "loadash": "0.0.1"
+  }
+}
