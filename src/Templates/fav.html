@@ -2,14 +2,16 @@
 <table class="table table-striped">
     <thead>
         <tr>
-            <th>Images</th>
+           <th>Favourite List</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-         <td><image-entry ng-repeat= "img in ctrl.images"image="img" index="$index" on-click ="ctrl.onClick"></image-entry></td>
+            <td><fav-entry ng-repeat= "img in ctrl.imagess" pic="img" on-click= "ctrl.onClick"><fav-entry></td>
         </tr>
     </tbody>
-</table>
+ </table>
 </div>
+
+
 

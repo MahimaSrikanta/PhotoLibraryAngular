@@ -9,6 +9,7 @@
   "dependencies": {
     "angular": "^1.6.4",
     "bootstrap": "^3.3.7",
-    "loadash": "0.0.1"
+    "loadash": "0.0.1",
+    "underscore": "^1.8.3"
   }
 }
