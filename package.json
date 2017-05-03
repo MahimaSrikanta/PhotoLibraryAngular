@@ -5,8 +5,11 @@
   "main": "index.js",
   "dependencies": {
     "angular": "^1.6.4",
+    "body-parser": "^1.17.1",
     "bootstrap": "^3.3.7",
     "express": "^4.15.2",
+    "jquery": "^3.2.1",
+    "mysql": "^2.13.0",
     "path": "^0.12.7"
   },
   "devDependencies": {},
@@ -22,5 +25,7 @@
   "bugs": {
     "url": "https://github.com/MahimaSrikanta/PhotoLibraryAngular/issues"
   },
-  "homepage": "https://github.com/MahimaSrikanta/PhotoLibraryAngular#readme"
+  "homepage": "https://github.com/MahimaSrikanta/PhotoLibraryAngular#readme",
+  "loadash": "0.0.1",
+  "underscore": "^1.8.3"
 }

@@ -1,16 +1,29 @@
-<div id="appContainer">
+<div>
 	<div class="row ImgUpload">
       <div class= "col-xs-10 col-xs-offset-2">
-				<image-upload upload-image="ctrl.uploadImage" ></image-upload>
+       <form class= "form-inline">
+     <div class="form-group">
+         <label> Image Upload: </label>
+        <input type="text" class="form-control" placeholder="image link" ng-model="ctrl.imageLink"></input>
+     </div>
+    <div class="form-group forms">
+         <label> Image Title: </label>
+        <input type="text" class="form-control" placeholder="image title" ng-model="ctrl.imageTitle"></input>
+        <button class="btn btn-primary" ng-click="ctrl.upload(ctrl.imageLink,ctrl.imageTitle)">Upload</button>
+     </div>
+</form>
       </div>
-		</div>
+	</div>
     <div class= "row">
         <div class= "col-xs-3 col-xs-offset-2">
-        <image-list images="ctrl.imageData" on-click="ctrl.onClick"> Image list goes here</image-list>
+        <image-list images="ctrl.imageData" on-click="ctrl.onClick"  imagess="ctrl.favList"> Image list goes here</image-list>
         </div>
         <div class= "col-xs-7">
             <image-display display="ctrl.currentImage" select-rating="ctrl.selectfunc"> </image-display>
         </div>
-    <div>
+        <div class= "col-xs-3 col-xs-offset-2">
+            <fav-list imagess="ctrl.favList" on-click= "ctrl.onClick"> </fav-list>
+        </div>
+    </div>
+</div>
 
-	<div>

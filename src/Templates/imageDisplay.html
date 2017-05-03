@@ -1,6 +1,6 @@
 <div id="imageDisplay">
-    <img src= {{ctrl.display.Image}} class= "thumbnail" width="404" height="236">
-    <p> {{ctrl.display.des}}
+    <img src= {{ctrl.display.link}} class= "thumbnail" width="404" height="236">
+    <p> {{ctrl.display.photo}}
          <span> Rating: {{ctrl.display.rating}} out of 5</span>
          <span> 
              <label> Rating </label>
@@ -8,7 +8,7 @@
                  <option ng-repeat="opt in ctrl.selections" >{{opt}}</option>
 
             </select>
-            <button type="button" class="btn btn-primary btnrat" ng-click="ctrl.selectRating(rating)"> Sumbit</button>
+            <button type="button" class="btn btn-primary btnrat" ng-click="ctrl.selectRating(rating, ctrl.display)"> Sumbit</button>
             </span>
      </p>
 </div>

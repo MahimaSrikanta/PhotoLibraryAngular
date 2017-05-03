@@ -7,8 +7,9 @@
     </thead>
     <tbody>
         <tr>
-         <td><image-entry ng-repeat= "img in ctrl.images"image="img" on-click ="ctrl.onClick"></image-entry></td>
+       <td><image-entry ng-repeat= "img in ctrl.images"image="img" index="$index" on-click ="ctrl.onClick"></image-entry></td>
         </tr>
     </tbody>
 </table>
 </div>
+
